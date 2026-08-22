@@ -1,0 +1,26 @@
+body {
+    background: rgb(3, 24, 3);
+    color: white;
+    padding: 0px;
+    margin: 10px;
+}
+
+header{
+    background: rgb(20, 52, 20); 
+    padding: 0px 0px; 
+}
+
+ul {
+    display: flex;
+    list-style: None;
+}
+
+li {
+    padding: 20px
+}
+
+li:first-child {
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 40px;
+}
