@@ -25,7 +25,7 @@ img {
     display: block;
 }
 
-.site-header{
+.site {
     background: rgb(1, 26, 1);
     background-image: 
         linear-gradient(#3b61062b 1px, transparent 1px),
@@ -37,6 +37,9 @@ img {
     align-items: center;
     flex-wrap: wrap;
     padding: 1.5rem 2rem 1.5rem;
+}
+
+.header{
     border-bottom: 1px solid white;
 }
 
@@ -48,7 +51,24 @@ img {
 .nav-text {
     text-decoration: none;
     color: rgb(162, 161, 161);
+}
 
+.nav-text:hover {
+    text-decoration: underline;
+}
+
+.nav-text i {
+    margin-right: 4px;
+}
+
+.footer {
+    margin-top: 64px;
+    border-top: 1px solid white;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
 }
 
 .container {
