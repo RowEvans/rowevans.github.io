@@ -53,13 +53,55 @@ img {
     color: rgb(162, 161, 161);
 }
 
-.nav-text:hover {
+.footer-link:hover {
     text-decoration: underline;
 }
 
 .nav-text i {
     margin-right: 4px;
 }
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-trigger {
+    color: rgb(162, 161, 161);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    background: rgba(0,0,0,0.75);
+    border: 1px solid white;
+    list-style: none;
+    padding: 0.5rem;
+    min-width: 150px;
+    border-radius:5px;
+
+    display: none;
+    flex-direction: column;
+}
+
+.dropdown-menu.open {
+    display: flex;
+}
+
+.dropdown-menu li {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu a {
+    display: block;
+}
+
 
 .footer {
     margin-top: 64px;

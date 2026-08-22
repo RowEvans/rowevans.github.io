@@ -2,16 +2,26 @@
 
 <html>
     <head>
-         <title>Rowan Evans</title>
+         <title>Rowan Evans Portfolio</title>
          <link rel="stylesheet" href="styles.css">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
          <header class="site header">
             <a class="nav-text mono" href="#">Rowan Evans</a>
             <nav class="nav-links">
                 <a class="nav-text mono" href="#">HOME</a>
-                <a class="nav-text mono" href="#">PROJECTS</a>
+                <div class="nav-dropdown mono">
+                    <button class="nav-dropdown-trigger mono" aria-expanded="false" aria-haspopup="true"> PROJECTS</button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="nav-text mono">Project One</a>
+                        <a href="#" class="nav-text mono">Project Two</a>
+                        <a href="#" class="nav-text mono">Project Three</a>
+                    </div>
+                </div>
                 <a class="nav-text mono" href="#">CAREER</a>
                 <a class="nav-text mono" href="#">ABOUT</a>
             </nav>
@@ -30,10 +40,11 @@
          <footer class="site footer">
                 <p class="mono">© 2026 Rowan Evans</p>
                 <div class="footer-links">
-                    <a href="https://github.com/rowevans?tab=repositories" class="nav-text mono"><i class="fa-brands fa-github"></i>Github</a>
-                    <a href="mailto:raevans2009@gmail.com" class="nav-text mono"><i class="fa-solid fa-envelope"></i>Email</a>
-                    <a href="https://linkedin.com/in/rowanaevans" class="nav-text mono"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                    <a href="https://github.com/rowevans?tab=repositories" class="nav-text mono footer-link"><i class="fa-brands fa-github"></i>Github</a>
+                    <a href="mailto:raevans2009@gmail.com" class="nav-text mono footer-link"><i class="fa-solid fa-envelope"></i>Email</a>
+                    <a href="https://linkedin.com/in/rowanaevans" class="nav-text mono footer-link"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
                 </div>
          </footer>
     </body>
+    <script src="script.js"></script>
 </html>
