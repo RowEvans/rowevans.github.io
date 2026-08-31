@@ -154,6 +154,10 @@ img {
 .footer {
     margin-top: 64px;
     border-top: 1px solid white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-links {
@@ -222,6 +226,7 @@ img {
     display: flex;
     flex-direction: column;
     margin: 0px;
+    margin-top: 56px;
 }
 
 .project-tag {
@@ -234,6 +239,8 @@ img {
     background: #0A1A0A;
     border: 1px solid #203c20;
     border-radius: 3px;
+    width: 100%;
+    max-width:8.5rem;
 }
 
 .project-title {
@@ -243,4 +250,15 @@ img {
     left: 0;
     margin: 0;
     padding: 0;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    max-height: 400px;
+}
+
+.project-image img {
+    border-radius: 20px;
 }
