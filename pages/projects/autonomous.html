@@ -22,63 +22,64 @@
                 <a class="nav-text mono" href="../about.html">ABOUT</a>
             </nav>
         </header>
+        <canvas id="grid"></canvas>
         <main class="project-page">
             <section class="project-hero">
                 <div class="hero-inner container">
                     <div class="project-image">
-                        <img src="../../assets/imgs/newyork.jpeg" alt="Foxglove image of data">
+                        <img src="../../assets/imgs/autonomous-flight-foxglove.png" alt="Foxglove image of data">
                     </div>
                     <p class="project-tag mono">Aerial Autonomy</p>
                     <h1 class="project-title mono">Autonomous Flight - Offboard Control</h1>
-                    <p class="project-summary" roboto>One or two sentence summary</p>
+                    <p class="project-summary" roboto>Building autonomous mission control for a simulated fixed-wing drone using ROS2 and PX4, progressing from basic flight commands toward automated inspection routes.</p>
                 </div>
             </section>
 
             <section class="project-overview">
-                <div class="container">
-                    <h2 class="mono">Overview</h2>
+                <div class="container narrow">
+                    <h2 class="overview-title mono">Overview</h2>
                     <p class="roboto">This project is built on top of a simulated autonomous fixed-wing aircraft mission, originally proposed as an undergraduate research project by a PhD researcher at Georgia Tech. This project's focus is to build a drone to provide detailed inspection of points of interest. The framing and phased structure of the mission below come from that proposal; everything in the "My Project" section past that point is my own implementation and progress.</p>
                 </div>
             </section>
 
             <section class="project-phases">
-                <div class="container">
-                    <h2 class="mono">Mission Phases</h2>
-                    <ul class=phase-list">
+                <div class="container narrow">
+                    <h2 class="phase-title mono">Mission Phases</h2>
+                    <ul class="phase-list">
                         <li class="phase-item">
                             <span class="phase-name mono">Phase 1 — Environment Setup</span>
-                            <span class="phase-status mono">Complete</span>
+                            <span class="phase-status mono status-complete">Complete</span>
                         </li>
                         <li class="phase-item">
                             <span class="phase-name mono">Phase 2 — Arm & Loiter</span>
-                            <span class="phase-status mono">Complete</span>
+                            <span class="phase-status mono status-complete">Complete</span>
                         </li>
                         <li class="phase-item">
                             <span class="phase-name mono">Phase 3 — Automated takeoff</span>
-                            <span class="phase-status mono">Complete</span>
+                            <span class="phase-status mono status-complete">Complete</span>
                         </li>
                         <li class="phase-item">
                             <span class="phase-name mono">Phase 4 — GPS circle mission</span>
-                            <span class="phase-status mono">Active</span>
+                            <span class="phase-status mono status-active">Active</span>
                         </li>
                         <li class="phase-item">
                             <span class="phase-name mono">Phase 5 — Return & Land</span>
-                            <span class="phase-status mono">Inactive</span>
+                            <span class="phase-status mono status-inactive">Inactive</span>
                         </li>
                     </ul>
                 </div>
             </section>
 
             <section class="project-tech">
-                <div class="container">
-                    <h2 class="mono">Tech Stack</h2>
+                <div class="container narrow">
+                    <h2 class="tech-title mono">Tech Stack</h2>
                     <ul class="tech-list">
-                        <li class="mono">ROS2</li>
-                        <li class="mono">PX4</li>
-                        <li class="mono">MicroXRCE</li>
-                        <li class="mono">Q Grond Control</li>
-                        <li class="mono">Plot Juggler</li>
-                        <li class="mono">Foxglove</li>
+                        <li class="tech-item mono">ROS2<span class="tooltip">Robot Operating System 2 (ROS2) — a middleware framework for building robotics software, providing tools for communication between different parts of a robot's system</span></li>
+                        <li class="tech-item mono">PX4<span class="tooltip"> An open-source flight control software stack for drones and other autonomous vehicles, handling low-level stabilization and flight commands.</span></li>
+                        <li class="tech-item mono">MicroXRCE<span class="tooltip">Micro XRCE-DDS — a lightweight communication bridge that lets resource-constrained devices (like flight controllers) talk to ROS2 using the DDS messaging standard.</span></li>
+                        <li class="tech-item mono">Q Grond Control<span class="tooltip">A ground control station app for planning, monitoring, and controlling drone missions in real time, compatible with PX4 and ArduPilot.</span></li>
+                        <li class="tech-item mono">Plot Juggler<span class="tooltip">A tool for visualizing time-series data from logs or live streams, commonly used to inspect and debug robotics telemetry.</span></li>
+                        <li class="tech-item mono">Foxglove<span class="tooltip">A visualization and debugging platform for robotics data, letting you inspect 3D scenes, sensor feeds, and logged or live ROS data.</span></li>
                     </ul>
                 </div>
             </section>
@@ -92,4 +93,5 @@
                 </div>
         </footer>
     </body>
+    <script src="../../script.js"></script>
 </html>
