@@ -246,8 +246,7 @@ img {
     background: #0A1A0A;
     border: 1px solid #203c20;
     border-radius: 3px;
-    width: 100%;
-    max-width:8.5rem;
+    width: fit-content;
 }
 
 .project-title {
@@ -386,4 +385,18 @@ img {
 
 .tech-item:hover .tooltip {
     display: block;
+}
+
+.project-breakdown {
+    position: relative;
+}
+
+.stack-image {
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+}
+
+.stack-image img {
+    border-radius: 20px;
 }

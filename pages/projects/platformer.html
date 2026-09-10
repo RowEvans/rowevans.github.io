@@ -26,64 +26,32 @@
         <canvas id="grid"></canvas>
         <main class="project-page">
             <section class="project-hero">
-                <div class="container">
-                    <div class="hero-image">
-                        <img src="#" alt="Foxglove image of data">
+                <div class="hero-inner container">
+                    <div class="project-image">
+                        <img src="../../assets/imgs/platfomer.png" alt="Platformer game">
                     </div>
-                    <p class="project-tag mono">Aerial Autonomy</p>
-                    <h1 class="project-title roboto">Autonomous Flight - Offboard Control</h1>
-                    <p class="project-summary" roboto>One or two sentence summary</p>
+                    <p class="project-tag mono">Game Development</p>
+                    <h1 class="project-title roboto">Platformer Game</h1>
+                    <p class="project-summary" roboto>This was a game I made in four days. I spent time learning update loops, state machines and how to keep track of all of the data on the screen at once. It was very helpful for me to learn these things as I would like to do more game development in the future.</p>
                 </div>
             </section>
 
             <section class="project-overview">
-                <div class="container">
-                    <h2 class="mono">Overview</h2>
-                    <p class="roboto">This project is built on top of a simulated autonomous fixed-wing aircraft mission, originally proposed as an undergraduate research project by a PhD researcher at Georgia Tech. This project's focus is to build a drone to provide detailed inspection of points of interest. The framing and phased structure of the mission below come from that proposal; everything in the "My Project" section past that point is my own implementation and progress.</p>
+                <div class="container narrow">
+                    <h2 class="mono overview-title">Overview</h2>
+                    <p class="roboto">This project was made in approximately four days, with an average of 2 hours per day on the project. It has very little design, but functionality. This game is currently a backburner game while I work on bigger projects like Autonomous Flight, or GradePath. I hope to return to this project one day as I have always loved playing games and I want to explore more about game design and development.</p>
                 </div>
             </section>
-
-            <section class="project-phases">
-                <div class="container">
-                    <h2 class="mono">Mission Phases</h2>
-                    <ul class=phase-list">
-                        <li class="phase-item">
-                            <span class="phase-name mono">Phase 1 — Environment Setup</span>
-                            <span class="phase-status mono">Complete</span>
-                        </li>
-                        <li class="phase-item">
-                            <span class="phase-name mono">Phase 2 — Arm & Loiter</span>
-                            <span class="phase-status mono">Complete</span>
-                        </li>
-                        <li class="phase-item">
-                            <span class="phase-name mono">Phase 3 — Automated takeoff</span>
-                            <span class="phase-status mono">Complete</span>
-                        </li>
-                        <li class="phase-item">
-                            <span class="phase-name mono">Phase 4 — GPS circle mission</span>
-                            <span class="phase-status mono">Active</span>
-                        </li>
-                        <li class="phase-item">
-                            <span class="phase-name mono">Phase 5 — Return & Land</span>
-                            <span class="phase-status mono">Inactive</span>
-                        </li>
-                    </ul>
+            
+            <section class="project-breakdown">
+                <div class="container narrow">
+                    <div class="stack-image">
+                        <img src="../../assets/imgs/pygame_logo.png" alt="Pygame logo">
+                    </div>
+                    <p class="roboto"> This runs entirely on pygame, a high-level graphics library to create games and animations. Scrolling through the docs of this library was not enjoyable but helped me to understand how to fundamentally understand a language or library, not just use their stuff. <br> This is the only library used in this program, runs everything. The main functions of this library used in this program are sprites, which is what allows animation over time with running.</p>
                 </div>
             </section>
-
-            <section class="project-tech">
-                <div class="container">
-                    <h2 class="mono">Tech Stack</h2>
-                    <ul class="tech-list">
-                        <li class="mono">ROS2</li>
-                        <li class="mono">PX4</li>
-                        <li class="mono">MicroXRCE</li>
-                        <li class="mono">Q Grond Control</li>
-                        <li class="mono">Plot Juggler</li>
-                        <li class="mono">Foxglove</li>
-                    </ul>
-                </div>
-            </section>
+            
         </main>
         <footer class="site footer">
             <p class="mono">© 2026 Rowan Evans</p>
